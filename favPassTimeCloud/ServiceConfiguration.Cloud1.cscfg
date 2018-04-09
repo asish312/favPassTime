@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="favPassTimeCloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="FavPassTymCloudService">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asish;AccountKey=$(_asish.key_)" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="2fb47f28-0628-466f-8f35-5080a790c7cc" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
